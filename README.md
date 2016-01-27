@@ -33,3 +33,23 @@ Command | Description
 *rubocop --only* | Run only specified cops 
 *rubocop --except* | Run all cops except specified
 
+#### Problems I ran into
+
+I had a number of problems disabling cops/checks.
+
+this [website](https://docs.chef.io/rubocop.html) was very helpful. it states that the general syntax is:
+```sh
+Syntax¶
+A .rubocop.yml file has the following syntax:
+
+NAME_OF_RULE:
+  Description: 'a description of a rule'
+  Enabled : (true or false)
+  KEY: VALUE
+where
+
+NAME_OF_RULE is the name of a rule
+Description is the string that prints as part of the standard output that describes the rule if it is triggered during the evaluation
+Enabled enables a rule (true) or disables a rule (false); for non-custom rules, this value will override the settings in the enabled.yml and disabled.yml files in RuboCop
+KEY: VALUE adds additional details for a rule, if necessary. For example, Max: 200 sets the line length to 200 characters for the LineLength rule
+```
