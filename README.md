@@ -23,13 +23,13 @@ $ rubocop app spec lib/something.rb
 
 Command | Description
 --- | ---
-*rubocop - h* | help
-*rubocop - L* | List of all files rubocop will inspect
-*rubocop - F* | tis will inspect to the first error allowing you to fix your code one error at a time
-*rubocop - D* | Displays cop names in offense messages
-*rubocop - C* | Run wit specified config file
-*rubocop - l* | Run only lint cops
-*rubocop - a* | Auto correct certain offense Note: Experimental
+*rubocop -h* | help
+*rubocop -L* | List of all files rubocop will inspect
+*rubocop -F* | tis will inspect to the first error allowing you to fix your code one error at a time
+*rubocop -D* | Displays cop names in offense messages
+*rubocop -C* | Run wit specified config file
+*rubocop -l* | Run only lint cops
+*rubocop -a* | Auto correct certain offense Note: Experimental
 *rubocop --only* | Run only specified cops 
 *rubocop --except* | Run all cops except specified
 
