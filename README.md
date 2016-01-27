@@ -35,7 +35,20 @@ Command | Description
 
 #### Problems I ran into
 
-I had a number of problems disabling cops/checks. To get this to work, youre going to first run *rubocop --auto-gen-config*. This will generate the file *rubocop_todo.yml* in your repository. This file shows all the major errors that you have in your project. To disable and modify cops you will then need to create the root file *.rubocop.yml*. You then have to include the line *inherit_from: .rubocop_todo.yml* at the top. At this point you can start to disable cops. 
+I had a number of problems disabling cops/checks. To get this to work, youre going to first run 
+```sh
+rubocop --auto-gen-config 
+```
+This will generate the file *rubocop_todo.yml* in your repository. This file shows all the major errors that you have in your project. To disable and modify cops you will then need to create the root file 
+```sh
+.rubocop.yml
+``` 
+
+You then have to include the line,
+```sh
+ inherit_from: .rubocop_todo.yml
+```
+at the top. At this point you can start to disable cops. 
 
 This [website](https://docs.chef.io/rubocop.html) was very helpful. it states that the general syntax for disabling/modifying cops is:
 ```sh
