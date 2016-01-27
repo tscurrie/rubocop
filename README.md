@@ -7,7 +7,7 @@ RuboCop is a Ruby static code analyzer. It will enforce many of the guidelines o
 
 ##### Installation:
 
-Type 
+Type this code in your project directory,
 ```sh 
 $ gem install rubocop
 ```
@@ -25,7 +25,7 @@ Command | Description
 --- | ---
 *rubocop -h* | help
 *rubocop -L* | List of all files rubocop will inspect
-*rubocop -F* | tis will inspect to the first error allowing you to fix your code one error at a time
+*rubocop -F* | this will inspect to the first error allowing you to fix your code one error at a time
 *rubocop -D* | Displays cop names in offense messages
 *rubocop -C* | Run wit specified config file
 *rubocop -l* | Run only lint cops
