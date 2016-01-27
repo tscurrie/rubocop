@@ -1,6 +1,6 @@
 # RuboCop Gem Demonstration
 
-[GitHub documentation link](https://github.com/bbatsov/rubocop)
+[RuboCop GitHub documentation link](https://github.com/bbatsov/rubocop)
 
 RuboCop is a Ruby static code analyzer. It will enforce many of the guidelines out lined in the community [Ruby Style Guide.](https://github.com/bbatsov/ruby-style-guide) Apart from reporting problems in your code, RuboCop can also automatically fix some of the problems for you. 
 
@@ -37,7 +37,7 @@ Command | Description
 
 I had a number of problems disabling cops/checks. To get this to work, youre going to first run *rubocop --auto-gen-config*. This will generate the file *rubocop_todo.yml* in your repository. This file shows all the major errors that you have in your project. To disable and modify cops you will then need to create the root file *.rubocop.yml*. You then have to include the line *inherit_from: .rubocop_todo.yml* at the top. At this point you can start to disable cops. 
 
-this [website](https://docs.chef.io/rubocop.html) was very helpful. it states that the general syntax for disabling/modifying cops is:
+This [website](https://docs.chef.io/rubocop.html) was very helpful. it states that the general syntax for disabling/modifying cops is:
 ```sh
 Syntax¶
 A .rubocop.yml file has the following syntax:
@@ -59,4 +59,10 @@ A cop that is really annoying is the *Line is too long error*, you will see this
 ```sh
 Metrics/LineLength:
   Max: 99
+```
+Or to disable this cop completely
+
+```sh
+Metrics/LineLength:
+  Enabled: false
 ```
