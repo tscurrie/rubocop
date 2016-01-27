@@ -2,7 +2,7 @@
 
 [GitHub documentation link](https://github.com/bbatsov/rubocop)
 
-RuboCop is a Ruby static code analyzer. It will enforce many of the guidelines out lined in the community Ruby Style Guide. Apart from reporting problems in your code, RuboCop can also automatically fix some of the problem for you. 
+RuboCop is a Ruby static code analyzer. It will enforce many of the guidelines out lined in the community [Ruby Style Guide.](https://github.com/bbatsov/ruby-style-guide) Apart from reporting problems in your code, RuboCop can also automatically fix some of the problems for you. 
 
 #### Prerequisites:
 
